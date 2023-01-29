@@ -1,21 +1,3 @@
-#
-# user_prompt = input("Enter a 'todo: ")
-#
-# to_dos = []
-#
-# response = user_prompt
-#
-# print(response)
-#
-# while response != 'done':
-#
-#     print(user_prompt)
-#
-#     # print("Enter a todo: ")
-
-    # print(user_prompt)
-
-
 # user_prompt = input("Enter a 'todo: ")
 
 response = True
@@ -25,23 +7,15 @@ tasks = []
 while response != 'done':
 
     response = input("Enter a 'todo: ")
-    # print(response)
-    print("Next item....")
+
+# Adding to prevent 'done' from being added to the list of todos
+
+    if response == 'done':
+        continue
 
     tasks.append(response)
 
-print(tasks)
+    print("Next item....")
 
 
-    #
-    # if task == 'done':
-    #     break
-
-
-
-
-
-
-
-
-
+print(f'Your todo list is: {tasks}')
