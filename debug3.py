@@ -1,5 +1,5 @@
 
-# Fixing the bu in the code
+# Fixing the bug in the code
 
 countries = []
 
